@@ -35,7 +35,8 @@
     header p {
       font-size: 1.25rem;
       margin: 10px auto 20px;
-      max-width: 600px;
+      max-width: 700px;
+      color: #000;
     }
     header .btn {
       display: inline-block;
@@ -112,80 +113,86 @@
   <!-- Hero -->
 <header>
   <h1>AI-ECOS</h1>
-  <p style="font-size:1.1rem; font-style:italic; margin:10px auto 20px; max-width:700px; color:#000;">
-    (Artificial Intelligence – Examen Clinique Objectif Structuré)
-  
-    Le premier <strong>chatbot intelligent médical francophone</strong> conçu pour simuler des patients virtuels et évaluer les compétences cliniques des étudiants en médecine.
+  <p><em>(Artificial Intelligence – Examen Clinique Objectif Structuré)</em></p>
+  <p>
+    Le premier <strong>chatbot médical francophone</strong> conçu pour simuler des patients virtuels et évaluer les compétences cliniques des étudiants en médecine.
   </p>
-  <img src="chatbot.png" alt="Illustration d’un patient virtuel AI-ECOS" style="max-width: 300px; width: 40%; height: auto; margin: 20px auto; display: block;">
+  <img src="chatbot.png" alt="Illustration d’un patient virtuel AI-ECOS">
   <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">Accéder au projet</a>
   <a class="btn" href="project-report.pdf" target="_blank">Lire le rapport</a>
 </header>
-
 
   <!-- Navigation -->
   <nav>
     <a href="#ecos">Les ECOS</a>
     <a href="#solution">Notre solution</a>
-    <a href="#demo">Démo</a>
-    <a href="#start">Comment démarrer</a>
+    <a href="#client">Besoins du client</a>
+    <a href="#limits">Limites</a>
+    <a href="#futur">Développements futurs</a>
     <a href="#team">Équipe</a>
   </nav>
 
-  <!-- History of ECOS -->
+  <!-- ECOS -->
   <section id="ecos">
     <h2>Qu’est-ce que les ECOS ?</h2>
     <p>
-      Les <strong>Examens Cliniques Objectifs Structurés (ECOS)</strong>, connus sous le nom
-      d’OSCE à l’international, sont utilisés depuis les années 1970 pour évaluer les compétences
-      cliniques des étudiants en médecine.  
+      Les <strong>Examens Cliniques Objectifs Structurés (ECOS)</strong>, ou OSCE, évaluent les compétences cliniques des étudiants en médecine depuis les années 1970.  
     </p>
     <p>
-      ✅ Les étudiants interagissent avec des patients standardisés (souvent des acteurs).  
-      ✅ Ils doivent poser des questions, diagnostiquer et démontrer leurs compétences de communication.  
+      ✅ Interactions avec des patients standardisés.  
+      ✅ Évaluation des diagnostics et compétences de communication.  
     </p>
-    <p>
-      ⚠️ Limites : coût élevé, organisation lourde, dépendance aux acteurs, manque de flexibilité.
-    </p>
+    <p>⚠️ Limites : coût élevé, organisation lourde, dépendance aux acteurs.</p>
   </section>
 
-  <!-- AI-ECOS -->
+  <!-- Solution -->
   <section id="solution">
     <h2>Notre solution : AI-ECOS</h2>
     <p>
-      <strong>AI-ECOS</strong> est un <em>chatbot médical intelligent</em> qui simule des patients virtuels francophones.  
-      Il permet aux étudiants de s’entraîner en toute autonomie et d’obtenir des évaluations objectives.  
+      <strong>AI-ECOS</strong> simule des patients virtuels réalistes et fournit un retour automatique aux étudiants.  
     </p>
     <ul style="text-align:left; display:inline-block;">
-      <li>🎯 Simulation de patients réalistes</li>
-      <li>📚 Entraînement illimité et flexible</li>
-      <li>⚡ Accessible en ligne, à tout moment</li>
+      <li>🩺 Patients francophones simulés</li>
+      <li>🔍 Réponses ancrées sur profils patients</li>
+      <li>✅ Évaluation automatique (checklist, MIRS)</li>
+      <li>💻 Interface interactive avec feedback</li>
+      <li>🔒 Déploiement local respectant la confidentialité</li>
     </ul>
   </section>
 
-  <!-- Demo -->
-  <section id="demo" class="demo">
-    <h2>🎥 Démo interactive</h2>
-    <p>Découvrez un aperçu du chatbot en action :</p>
-    <img src="interface.png" alt="Capture d’écran de l’interface AI-ECOS">
-  </section>  
-
-  <!-- Getting Started -->
-  <section id="start">
-    <h2>🚀 Prototype en cours de développement</h2>
-    <p>
-      Le projet <strong>AI-ECOS</strong> est actuellement en cours de développement. 
-      Cette version représente uniquement un <strong>prototype</strong> de ce qui est prévu.  
-    </p>
-    <p>
-      👉 Vous pouvez néanmoins accéder au dépôt GitHub et suivre les instructions pour 
-      <strong>démarrer l’MVP</strong> en local.
-    </p>
-    <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">
-      Consulter le dépôt GitHub
-    </a>
+  <!-- Client Needs -->
+  <section id="client">
+    <h2>🧩 Besoins du client</h2>
+    <ul style="text-align:left; display:inline-block;">
+      <li>Réduire les coûts et la logistique des ECOS traditionnels</li>
+      <li>Garantir l’objectivité et la reproductibilité des évaluations</li>
+      <li>Assurer la conformité RGPD (données étudiantes, déploiement local)</li>
+      <li>Fournir un outil évolutif et adaptable à plusieurs scénarios cliniques</li>
+    </ul>
   </section>
-  
+
+  <!-- Limitations -->
+  <section id="limits">
+    <h2>⚠️ Limites actuelles</h2>
+    <ul style="text-align:left; display:inline-block;">
+      <li>Scoring limité au niveau 1 (checklist binaire)</li>
+      <li>Faux positifs dans le scoring sémantique</li>
+      <li>Données encore synthétiques, pas hospitalières</li>
+      <li>Dépendance GPU pour usage fluide</li>
+    </ul>
+  </section>
+
+  <!-- Future -->
+  <section id="futur">
+    <h2>🚀 Développements futurs</h2>
+    <ul style="text-align:left; display:inline-block;">
+      <li>Scoring de niveau 2 (MIRS : communication, empathie)</li>
+      <li>Embeddings biomédicaux fine-tunés (CamemBERT)</li>
+      <li>Nouveaux scénarios enrichis (urgences, cas complexes)</li>
+      <li>Optimisation CPU/GPU et rapidité</li>
+      <li>Étude pilote avec étudiants en médecine</li>
+    </ul>
+  </section>
 
   <!-- Team -->
   <section id="team" class="team">
@@ -201,15 +208,6 @@
     </ul>
   </section>
 
-  <!-- Disclaimer -->
-  <section id="disclaimer">
-    <h2>⚠️ Disclaimer</h2>
-    <p>
-      Cet outil est conçu uniquement pour des <strong>fins éducatives</strong>.  
-      Il ne remplace pas une consultation médicale et ne doit pas être utilisé pour établir un diagnostic réel.
-    </p>
-  </section>
-
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Projet AI-ECOS – Tous droits réservés</p>
@@ -217,7 +215,3 @@
 
 </body>
 </html>
-
-
-
-
