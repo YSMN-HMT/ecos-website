@@ -35,8 +35,7 @@
     header p {
       font-size: 1.25rem;
       margin: 10px auto 20px;
-      max-width: 700px;
-      color: #000;
+      max-width: 600px;
     }
     header .btn {
       display: inline-block;
@@ -113,30 +112,31 @@
   <!-- Hero -->
 <header>
   <h1>AI-ECOS</h1>
-  <p><em>(Artificial Intelligence – Examen Clinique Objectif Structuré)</em></p>
-  <p>
-    Le premier <strong>chatbot médical francophone</strong> conçu pour simuler des patients virtuels et évaluer les compétences cliniques des étudiants en médecine.
+  <p style="font-size:1.1rem; font-style:italic; margin:10px auto 20px; max-width:700px; color:#000;">
+    (Artificial Intelligence – Examen Clinique Objectif Structuré)
+  
+    Le premier <strong>chatbot intelligent médical francophone</strong> conçu pour simuler des patients virtuels et évaluer les compétences cliniques des étudiants en médecine.
   </p>
-  <img src="chatbot.png" alt="Illustration d’un patient virtuel AI-ECOS">
+  <img src="chatbot.png" alt="Illustration d’un patient virtuel AI-ECOS" style="max-width: 300px; width: 40%; height: auto; margin: 20px auto; display: block;">
   <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">Accéder au projet</a>
   <a class="btn" href="project-report.pdf" target="_blank">Lire le rapport</a>
 </header>
+
 
   <!-- Navigation -->
   <nav>
     <a href="#ecos">Les ECOS</a>
     <a href="#solution">Notre solution</a>
-    <a href="#client">Besoins du client</a>
-    <a href="#limits">Limites</a>
-    <a href="#futur">Développements futurs</a>
+    <a href="#demo">Démo</a>
+    <a href="#start">Comment démarrer</a>
     <a href="#team">Équipe</a>
   </nav>
 
-  <!-- ECOS -->
+<!-- ECOS -->
   <section id="ecos">
     <h2>Qu’est-ce que les ECOS ?</h2>
     <p>
-      Les <strong>Examens Cliniques Objectifs Structurés (ECOS)</strong>, ou OSCE, évaluent les compétences cliniques des étudiants en médecine depuis les années 1970.  
+      Les <strong>ECOS</strong> évaluent les compétences cliniques des étudiants en médecine depuis les années 1970.  
     </p>
     <p>
       ✅ Interactions avec des patients standardisés.  
@@ -160,45 +160,35 @@
     </ul>
   </section>
 
-  <!-- Client Needs -->
-  <section id="client">
-    <h2>🧩 Besoins du client</h2>
-    <ul style="text-align:left; display:inline-block;">
-      <li>Réduire les coûts et la logistique des ECOS traditionnels</li>
-      <li>Garantir l’objectivité et la reproductibilité des évaluations</li>
-      <li>Assurer la conformité RGPD (données étudiantes, déploiement local)</li>
-      <li>Fournir un outil évolutif et adaptable à plusieurs scénarios cliniques</li>
-    </ul>
-  </section>
+  <!-- Demo -->
+  <section id="demo" class="demo">
+    <h2>🎥 Démo interactive</h2>
+    <p>Découvrez un aperçu du chatbot en action :</p>
+    <img src="interface.png" alt="Capture d’écran de l’interface AI-ECOS">
+  </section>  
 
-  <!-- Limitations -->
-  <section id="limits">
-    <h2>⚠️ Limites actuelles</h2>
-    <ul style="text-align:left; display:inline-block;">
-      <li>Scoring limité au niveau 1 (checklist binaire)</li>
-      <li>Faux positifs dans le scoring sémantique</li>
-      <li>Données encore synthétiques, pas hospitalières</li>
-      <li>Dépendance GPU pour usage fluide</li>
-    </ul>
+  <!-- Getting Started -->
+  <section id="start">
+    <h2>🚀 Prototype en cours de développement</h2>
+    <p>
+      Le projet <strong>AI-ECOS</strong> est actuellement en cours de développement. 
+      Cette version représente uniquement un <strong>prototype</strong> de ce qui est prévu.  
+    </p>
+    <p>
+      👉 Vous pouvez néanmoins accéder au dépôt GitHub et suivre les instructions pour 
+      <strong>démarrer l’MVP</strong> en local.
+    </p>
+    <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">
+      Consulter le dépôt GitHub
+    </a>
   </section>
-
-  <!-- Future -->
-  <section id="futur">
-    <h2>🚀 Développements futurs</h2>
-    <ul style="text-align:left; display:inline-block;">
-      <li>Scoring de niveau 2 (MIRS : communication, empathie)</li>
-      <li>Embeddings biomédicaux fine-tunés (CamemBERT)</li>
-      <li>Nouveaux scénarios enrichis (urgences, cas complexes)</li>
-      <li>Optimisation CPU/GPU et rapidité</li>
-      <li>Étude pilote avec étudiants en médecine</li>
-    </ul>
-  </section>
+  
 
   <!-- Team -->
   <section id="team" class="team">
     <h2>👩‍💻 L’équipe derrière AI-ECOS</h2>
     <p>
-      Projet final mené à <strong>Sorbonne Paris-Nord & EFREI Paris</strong>, en collaboration avec l’AP-HP.  
+      Projet final mené à <strong>EFREI Paris</strong>, en collaboration avec l’AP-HP.  
     </p>
     <ul>
       <li><strong>Yasaman Hemmati</strong> – Chef de projet</li>
@@ -206,6 +196,15 @@
       <li>Faten Chaieb Chakchouk – Encadrante</li>
       <li>Etienne Bizot – Accompagnement</li>
     </ul>
+  </section>
+
+  <!-- Disclaimer -->
+  <section id="disclaimer">
+    <h2>⚠️ Disclaimer</h2>
+    <p>
+      Cet outil est conçu uniquement pour des <strong>fins éducatives</strong>.  
+      Il ne remplace pas une consultation médicale et ne doit pas être utilisé pour établir un diagnostic réel.
+    </p>
   </section>
 
   <!-- Footer -->
