@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-ECOS – Chatbot Médical</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: url("ecos-hero.png") no-repeat center/cover;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ff5722;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #00796b;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 25px;
+      background: #00796b;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #004d40;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    section h2 {
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+    .team ul {
+      list-style: none;
+      padding: 0;
+    }
+    .team li {
+      margin: 10px 0;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .demo iframe {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>AI-ECOS</h1>
+    <img src="AI-ECOS.png" 
+         alt="ECOS Project Banner" 
+         style="max-width: 900px; width: 100%; height: auto; margin: 20px auto; display: block;">
+    <p>Le premier chatbot intelligent pour préparer les examens cliniques OSCE</p>
+    <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">Accéder au projet</a>
+    <a class="btn" href="project-report.pdf" target="_blank">Lire le rapport</a>
+  </header>
+  
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#ecos">Les ECOS</a>
+    <a href="#solution">Notre solution</a>
+    <a href="#demo">Démo</a>
+    <a href="#start">Comment démarrer</a>
+    <a href="#team">Équipe</a>
+  </nav>
+
+  <!-- History of ECOS -->
+  <section id="ecos">
+    <h2>Qu’est-ce que les ECOS ?</h2>
+    <p>
+      Les <strong>Examens Cliniques Objectifs Structurés (ECOS)</strong>, connus sous le nom
+      d’OSCE à l’international, sont utilisés depuis les années 1970 pour évaluer les compétences
+      cliniques des étudiants en médecine.  
+    </p>
+    <p>
+      ✅ Les étudiants interagissent avec des patients standardisés (souvent des acteurs).  
+      ✅ Ils doivent poser des questions, diagnostiquer et démontrer leurs compétences de communication.  
+    </p>
+    <p>
+      ⚠️ Limites : coût élevé, organisation lourde, dépendance aux acteurs, manque de flexibilité.
+    </p>
+  </section>
+
+  <!-- AI-ECOS -->
+  <section id="solution">
+    <h2>Notre solution : AI-ECOS</h2>
+    <p>
+      <strong>AI-ECOS</strong> est un <em>chatbot médical intelligent</em> qui simule des patients virtuels francophones.  
+      Il permet aux étudiants de s’entraîner en toute autonomie et d’obtenir des évaluations objectives.  
+    </p>
+    <ul style="text-align:left; display:inline-block;">
+      <li>🎯 Simulation de patients réalistes</li>
+      <li>📚 Entraînement illimité et flexible</li>
+      <li>⚡ Accessible en ligne, à tout moment</li>
+    </ul>
+  </section>
+
+  <!-- Demo -->
+  <section id="demo" class="demo">
+    <h2>🎥 Démo interactive</h2>
+    <p>Découvrez un aperçu du chatbot en action :</p>
+    <img src="interface.png" alt="Capture d’écran de l’interface AI-ECOS" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:8px;">
+  </section>  
+
+  <!-- Getting Started -->
+  <section id="start">
+    <h2>🚀 Prototype en cours de développement</h2>
+    <p>
+      Le projet <strong>AI-ECOS</strong> est actuellement en cours de développement. 
+      Cette version représente uniquement un <strong>prototype</strong> de ce qui est prévu.  
+    </p>
+    <p>
+      👉 Vous pouvez néanmoins accéder au dépôt GitHub et suivre les instructions pour 
+      <strong>démarrer l’MVP</strong> en local.
+    </p>
+    <a class="btn" href="https://github.com/Know-Think-Dream/ECOS" target="_blank">
+      Consulter le dépôt GitHub
+    </a>
+  </section>
+  
+
+  <!-- Team -->
+  <section id="team" class="team">
+    <h2>👩‍💻 L’équipe derrière AI-ECOS</h2>
+    <p>
+      Projet final mené à <strong>Sorbonne Paris-Nord & EFREI Paris</strong>, en collaboration avec l’AP-HP.  
+    </p>
+    <ul>
+      <li><strong>Yasaman Hemmati</strong> – Chef de projet</li>
+      <li>Mohamed Djallel Dilmi – Encadrant</li>
+      <li>Faten Chaieb Chakchouk – Encadrante</li>
+      <li>Etienne Bizot – Accompagnement</li>
+    </ul>
+  </section>
+
+  <!-- Disclaimer -->
+  <section id="disclaimer">
+    <h2>⚠️ Disclaimer</h2>
+    <p>
+      Cet outil est conçu uniquement pour des <strong>fins éducatives</strong>.  
+      Il ne remplace pas une consultation médicale et ne doit pas être utilisé pour établir un diagnostic réel.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Projet AI-ECOS – Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
